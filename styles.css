@@ -1,0 +1,1903 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+
+
+.logo{
+    width: 100px;
+    height: 150px;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #140f0f;
+    color: #f1f1f1;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+.logo img{
+    width: 110px;
+    height: 130px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 22px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #D84040;
+    
+}
+
+
+/* Submenu*/
+
+nav ul .Submenu{
+    position: absolute;
+    width: 110px;
+    background-color: #1c1c1c;
+    bottom: 360px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    border-radius: 20%;
+}
+
+nav ul li:hover .Submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+nav ul .Submenu li{
+    margin: 0;
+    width: 100%;
+
+
+}
+
+nav ul .Submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+.Submenu{
+    display: flex; 
+    flex-direction: column; 
+    padding: 0;
+    margin: 0
+}
+
+
+button{
+    padding: 10px 20px;
+    background-color: #D84040;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.carticon {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; 
+}
+
+.cart-icon {
+    margin-top: 50px; 
+    color: #d9d9d9;
+    margin-right: -50px;
+   
+}
+
+.cart-icon img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+ 
+}
+
+.cart-icon :hover {
+    transform: scale(1.6);
+    color: #D84040;
+}
+
+.cartcount{
+    display: flex;
+    width: 19px;
+    height: 19px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -11px;
+    right: -28px;
+  
+}
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #1D1616;
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1350px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Features Section */
+
+.features{
+    padding: 40px 20px; 
+    margin-left: 530px;
+    max-width: 1200px; 
+}
+
+.features-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #D84040;
+    margin-bottom: 30px;
+}
+
+.features-list {
+    font-size: 18px;
+    color: #f1f1f1;
+    padding: 0; 
+    max-width: 600px; 
+}
+
+.features-list li {
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+/* Item-Container-Holder */
+.item-container-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #D84040;
+    margin: 40px 0;
+    margin-bottom: 5px;
+}
+
+/* Top Sellers Section */
+.top-sellers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.top-sellers .product {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-sellers .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.top-sellers .product img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.top-sellers .product:hover img {
+    transform: scale(1.1);
+}
+
+/* New Releases Section */
+.new-releases {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.new-releases .product {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-releases .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.new-releases .product img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.new-releases .product:hover img {
+    transform: scale(1.1);
+}
+
+/* General Container Styling */
+.image-container {
+    display: inline-block; 
+    position: relative;    
+    width: fit-content;    
+    height: 300px;          
+    padding: 5px;          
+    border: 2px solid transparent; 
+    background-color: transparent; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* General Container Styling */
+.image-container {
+    display: inline-block; 
+    position: relative;    
+    padding: 10px;         
+    background-color: black; 
+    border: 2px solid transparent; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Styling for Images Inside Containers */
+.image-container img {
+    display: block; 
+    width: 100%;    
+    height: auto;  
+}
+
+/* Hover Effects */
+.image-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); 
+}
+
+.Description{
+    position: relative;
+    right: -20px; 
+
+}
+
+.Facts{
+    color: #D84040;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-left: 75px;
+    font-size: 30px;
+}
+
+ol{
+    
+    padding: 0 20px; 
+    max-width: 600px; 
+    padding-bottom: 20px;
+    margin-left: 75px;
+
+}
+
+ol li{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    color: #f1f1f1;
+}
+
+.footerlogo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color:  #D84040;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-item {
+    margin: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-item h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color:  #D84040;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    font-size: 16px;
+    color: #f1f1f1;
+    padding-bottom: 5px;
+}
+
+i{
+    padding-right: 10px;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+    color:  #D84040;
+}
+
+.footerbottom{
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+    color: white;
+}
+
+
+/* About Us */
+
+.Aboutbig{
+    text-align: center;
+    background-color: #1D1616;
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.Aboutbig img{
+    width: 100%;
+    max-width: 1350px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 35px;
+}
+
+.about-content p{
+    padding-bottom: 10px;
+}
+
+
+
+.mision{
+    background-color:#1D1616 ;
+    padding: 40px 20px;
+}
+
+.mision img{
+    width: 325px;
+    height: 210px;
+}
+
+.Really{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+   
+   
+}
+
+
+
+
+.Vision{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+
+.Gamers{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+/* mision Sellers Section */
+.mision-sellers {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+
+
+
+
+/* General Container Styling */
+.mision-container {
+    display: inline-block; 
+    width: 300px;    
+    max-width: 100%;
+    background-color: transparent; 
+    border: 2px solid transparent; 
+    border-radius: 10px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    padding: 10px;          
+    background-color: black;
+}
+
+
+/* Styling for Images Inside Containers */
+.mision-container img {
+    width: 280px;
+    height: 210px;
+    border-radius: 5px;
+}
+
+
+
+
+.team {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .meetH {
+    color: #ff6f61;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .teamsec1,
+  .teamsec2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .member-card {
+    width: 180px;
+    min-height: 260px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+  }
+  
+  .teamimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #8e1616;
+    margin: 10px auto;
+  }
+  
+.Branch{
+    color: #D84040;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.Branchintro p{
+    width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    line-height: 1.6;
+    color: white; 
+    padding-bottom: 20px;
+
+}
+
+
+.tables{
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-x: auto; 
+
+}
+
+
+table{
+    color: black;
+    background-color: lightgray;
+    width: 90%; 
+    max-width: 800px; 
+    border-collapse: collapse;
+    margin: 20px auto; 
+
+}
+
+.style-table{
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+}
+
+.style-table th,
+.style-table td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+}
+
+
+.style-table tbody tr:nth-child(even) {
+    background-color: #e9e9e9;
+  }
+  
+.style-table tbody tr:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+  }
+  
+.style-table th {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+iframe{
+   padding-bottom: 50px;
+}
+
+
+
+
+.map h2{
+    color: #D84040;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.map1 h2{
+    color: #D84040;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.location-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.location-container img{
+    width: 350px;
+    height: 300px;
+    padding-bottom: 50px;
+}
+
+.location-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/*Games Page*/
+
+.game-images img{
+    width: 326px;
+    height: 210px;
+    transition: transform 0.3s ease;
+}
+
+.search-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 50px; 
+}
+
+.search-container input[type="text"] {
+    width: 300px; 
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px 0 0 4px; 
+    font-size: 16px; 
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px 20px; 
+    border: 2px solid #ccc; 
+    background-color:  #D84040; 
+    color: white; 
+    border-radius: 0 4px 4px 0; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.search-container button:hover {
+    background-color: darkred; 
+}
+
+.game-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.game-card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(250, 246, 246, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.game-card content h3{
+    text-align: center;
+}
+
+
+.game-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.game-image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.game-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.button-container {
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+.desciption-game {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-image-container:hover .desciption-game {
+    opacity: 1;
+}
+
+.details{
+    line-height: 1.6;
+}
+
+.desciption-game h1{
+    padding-bottom: 10px;
+}
+
+
+
+/* Console page*/
+.consolep h2{
+        margin: 0; 
+        padding-top: 50px;
+        text-align: center;
+        color:  #D84040;
+        font-size: 40px;
+    }
+
+.consolep p{
+        margin: 10px auto 0; 
+        font-size: 18px; 
+        width: 500px;
+        text-align: center;
+}
+
+.console-images{
+        margin-left: 50px;
+}
+
+.console-images img{
+    width: 326px;
+    height: 210px;
+}
+
+.console-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.console-card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(250, 246, 246, 0.2);
+    margin: 20px;
+
+}
+
+.console-card-content{
+    padding: 16px;
+    color: white;
+}
+
+.console-card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.console-card-content p{
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.console-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.console-image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.console-image-container:hover img {
+    transform: scale(1.1);
+}
+
+
+.console-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.console-image-container:hover .console-price {
+    opacity: 1;
+}
+
+.buy-now{
+    background-color: #218838;
+    margin-right: 12px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*Gaming peripherals page*/
+
+.Gamingpheripheralsp h2{
+    margin: 0; 
+    padding-top: 50px;
+    text-align: center;
+    color:  #D84040;
+    font-size: 40px;
+}
+
+.Gamingpheripheralsp p{
+    margin: 10px auto 0; 
+    font-size: 18px; 
+    width: 600px;
+    text-align: center;
+}
+
+.Gamingpheripherals-images{
+    margin-left: 50px;
+}
+.Gamingpheripherals-images img{
+    width: 326px;
+    height: 210px;
+}
+
+.peripherals-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.peripherals-card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(250, 246, 246, 0.2);
+    margin: 20px;
+
+
+}
+
+.peripherals-card-content{
+    padding: 16px;
+    color: white;
+}
+
+.peripherals-card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.peripherals-card-content p{
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.peripherals-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.peripherals-image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.peripherals-image-container:hover img {
+    transform: scale(1.1);
+}
+
+
+.peripherals-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.peripherals-image-container:hover .peripherals-price {
+    opacity: 1;
+}
+
+
+
+
+/*Upcoming games page*/
+
+/* General styling */
+
+.image-slider {
+    width: 100%;
+    height: 400px;
+    padding-top: 10px;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 12s infinite;
+}
+
+.slide img {
+    max-width: 100%; 
+    max-height: 95%; 
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.slide-show{
+    padding-bottom: 250px;
+    background-color: black;
+}
+
+
+/* Animation */
+@keyframes slideAnimation {
+    0% { opacity: 1; z-index: 2; }
+    33% { opacity: 0; z-index: 1; }
+    66% { opacity: 0; z-index: 1; }
+    100% { opacity: 1; z-index: 2; }
+}
+
+/* Delay for each slide to stagger them */
+.slide1 {
+    animation-delay: 0s;
+}
+.slide2 {
+    animation-delay: 4s;
+}
+.slide3 {
+    animation-delay: 8s;
+}
+
+
+
+.upcomingbox{
+    background-color: #140f0f; 
+    padding: 20px;
+
+}
+
+.upcomingp h2{
+    margin: 0; 
+    padding-top: 50px;
+    text-align: center;
+    color: #D84040;
+}
+
+.upcomingp p{
+    margin: 10px auto 0; 
+    font-size: 18px; 
+    text-align: center;
+    max-width: 630px;
+    padding-bottom: 20px;
+}
+
+.upcoming-images img{
+    width: 326px;
+    height: 210px;
+}
+
+.upcoming-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.upcoming-card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(250, 246, 246, 0.2);
+    margin: 20px;
+
+}
+
+.upcoming-card-content{
+    padding: 16px;
+    color: white;
+}
+
+.upcoming-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.upcoming-image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.upcoming-image-container:hover img {
+    transform: scale(1.1);
+}
+
+
+.release-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.upcoming-image-container:hover .release-date {
+    opacity: 1;
+}
+
+
+.upcomingbutton-container {
+    margin-top: 12px;
+}
+
+.Pre{
+    background-color: #218838;
+    margin-left: 17px;
+    margin-bottom: 6px;
+
+}
+
+/*contact us page*/
+
+.contact-body{
+    background-color: #1D1616;
+}
+
+.contact-head{
+    display: flex;
+    justify-content: center;
+    background-color: #1D1616;
+    padding-top: 50px;
+    font-size: 45px;
+    color:  #D84040;
+}
+
+
+.contact-p p{
+width: 100%;
+text-align: center;
+padding-top: 30px;
+background-color: #1D1616;
+max-width: 600px;
+margin-left: 370px;
+line-height: 1.6;
+}
+
+.contactsec{
+    font-family: Arial, sans-serif;
+    background-color: #1D1616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.contact-form {
+    background-color: grey;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #D84040;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color:  black;
+}
+
+
+/*FAQ Page*/
+.FAQ-body{
+    background-color: #1D1616;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.FAQ-body h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration:none;
+}
+
+.questions{
+    max-width: 100%;
+    margin: auto;
+}
+
+.accordion{
+    background-color: lightgrey;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    height: 75px;
+}
+
+.accordion i{
+    font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover{
+    background-color:  grey;
+} 
+
+.pannel{
+    padding: 0 2rem 2.5rem 2rem;
+    overflow: hidden;
+    background-color: white;
+    display: none;
+}
+
+.pannel p{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding-top: 20px;
+
+}
+
+.questions{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.questions.active{
+    border: none;
+}
+
+.form-form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    background-color: #1D1616;
+}
+
+
+.con-form {
+    background-color: grey;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    color: black;
+
+}
+
+
+.con-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.con-form input[type="text"],
+.con-form input[type="email"],
+.con-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.con-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.con-form button {
+    width: 100%;
+    background-color: #8E1616;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.con-form button:hover {
+    background-color:  black;
+}
+
+
+
+
+/*Sign In*/
+
+.signsec{
+    font-family: Arial, sans-serif;
+    background-color: #1D1616;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signcontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-wrapper h2 {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 2px solid #b5b5b5;
+}
+
+.form-wrapper label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="password"],
+.form-wrapper input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-wrapper .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-wrapper .checkbox input {
+    margin-right: 10px;
+}
+
+.form-wrapper button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-wrapper button:hover {
+    background-color: #555;
+}
+
+.divider {
+    width: 2px;
+    background-color: #d9d9d9;
+    margin: 0 10px;
+}
+
+
+
+
+/* order page */
+
+.orderp h2{
+    margin: 0; 
+    padding-top: 50px;
+    text-align: center;
+    color:  white;
+    font-size: 40px;
+}
+
+.order-images{
+    padding-bottom: 75px;
+}
+
+.order-images img{
+    width: 326px;
+    height: 210px;
+    transition: transform 0.3s ease;
+}
+
+
+.order-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+.order-card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(250, 246, 246, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.order-card content h3{
+    text-align: center;
+}
+
+
+.order-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.order-image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.order-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.button-container {
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+.desciption-order {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.order-image-container:hover .desciption-order {
+    opacity: 1;
+}
+
+.details{
+    line-height: 1.6;
+}
+
+.desciption-order h1{
+    padding-bottom: 10px;
+}
+
+
+
+/* Cart page  */
+
+.cartheading{
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background: #333;
+    color: white;
+}
+.quantity button {
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.checkout-btn:hover {
+    background: #218838;
+}
+
+#clear-cart{
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-left: 117px;
+}
+
+#save-favourite{
+    background-color: red;
+
+}
+
+#apply-favourite{
+    background-color: red;
+}
+
+.favourites-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.favourites-buttons button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+/* payments page */
+
+.pay-container {
+    max-width: 800px;
+    margin: auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.pay-h1{
+    text-align: center;
+}
+
+.pay-h2{
+    margin-top: 30px;
+    color: white;
+}
+
+.pay-order-summary {
+    border: 5px solid grey ;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+.pay-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+
+
+  
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    .navbar{
+        display: inline-block;
+    }.navbar nav{
+        display: flex;
+        flex-direction: column;
+    }.navbar ul{
+        display: flex;
+        flex-direction: column;
+    }.navbar{
+        width: 100%;
+    }.carticon{
+         margin-right: 120px;
+         margin-top: 10px;
+    }button{
+        margin-top: 30px;
+        margin-right: 45px;
+    }.intro {
+        margin-left: 5%;
+        margin-right: 5%;
+    }.features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }.item-container-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }.image-container{
+        margin-bottom: 5%;
+    }.map-container-holder{
+        display: flex;
+        flex-direction: column;
+    }.map-container-holder .location-content{
+        display: flex;
+        flex-direction: column;
+    }.map-container-holder iframe{
+        width: 90%;
+    }.upcomingp p{
+        text-align: justify;
+        margin: 5%;
+    }.contact-p p{
+        width: 90%;
+        margin: 5%;
+        text-align: justify;
+    }.signsec{
+        height: 150vh;
+    }.signcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }.consolep p{
+        text-align: justify;
+    }.console-card-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }.Gamingpheripheralsp p{
+        text-align: justify;
+        width: 90%;
+    }.peripherals-card-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+  .teamsec1, .teamsec2{
+        zoom: 0.7;
+    }
+    .Branchintro p{
+        text-align: justify;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .console-card-container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    .peripherals-card-container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    body{
+        zoom: 0.70;
+        margin: 5%;
+      }
+    .teamsec1, .teamsec2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+
+[
+    {
+        "id": 1,
+        "name": "Intel Core I3",
+        "price": 40000,
+        "image": "Images/processor 1 intel.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Intel Core I5",
+        "price": 56000,
+        "image": "Images/proccessor i5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Intel Core I7",
+        "price": 120000,
+        "image": "Images/intel i7.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Intel Core I9",
+        "price": 154500,
+        "image": "Images/Intel i9.jpg"
+    },
+    {
+        "id": 5,
+        "name": "AMD Ryzen 5 5600GT",
+        "price": 43500,
+        "image": "Images/RYZEN 1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "AMD Ryzen 7 5700G",
+        "price": 51000,
+        "image": "Images/RYZEN 2.jpg"
+    },
+
+
+    {
+        "id": 7,
+        "name": "MSI Geforce RTX 5080 SHADOW 3X OC 16GB GDDR7X Graphic Card",
+        "price": 456000,
+        "image": "Images/Graphic card 1"
+    },
+    {
+        "id": 8,
+        "name": "Asus ROG Strix GeForce RTX 4060 8GB GDDR6X OC Graphics Card",
+        "price": 169000,
+        "image": "Images/Graphic card 2.jpg"
+    },
+    {
+        "id": 9,
+        "name": "MSI Geforce RTX 4070 Ti Ventus OC 3X E1 12GB GDDR6X Graphic Card",
+        "price": 344500,
+        "image": "Images/Graphic card 3.jpg"
+    },
+    {
+        "id": 10,
+        "name": "MSI Geforce RTX 5070 Gaming Trio OC 12GB GDDR7X Graphics Card",
+        "price": 270500,
+        "image": "Images/Graphic card 4"
+    },
+    {
+        "id": 11,
+        "name": "MSI Geforce RTX 5080 SOC 16GB GDDR7X Graphics Card",
+        "price": 556500,
+        "image": "Images/Graphic card 5"
+    },
+    {
+        "id": 12,
+        "name": "MSI Geforce RTX 5080 VANGUARD SOC 16GB GDDR7X Graphics Card",
+        "price": 530000,
+        "image": "Images/Graphic card 6"
+    },
+
+
+
+    {
+        "id": 13,
+        "name": "Asus Prime A520M-K (DDR4) Micro ATX Motherboard",
+        "price": 32000,
+        "image": "Images/MotherBoard 1.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Asus Prime A620M-K DDR5 Motherboard",
+        "price": 39000,
+        "image": "Images/MotherBoard 2.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Asus Prime B450M-A II (DDR4) Motherboard",
+        "price": 38500,
+        "image": "Images/MotherBoard 3.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Asus Prime B760M A DDR5 Motherboard",
+        "price": 55000,
+        "image": "Images/MotherBoard 4"
+    },
+    {
+        "id": 17,
+        "name": "Asus Rog Strix Gaming (DDR5) Motherboard",
+        "price": 175000,
+        "image": "Images/MotherBoard 5.jpg"
+    },
+    {
+        "id": 18,
+        "name": "MSI A520M-A Pro Micro ATX Motherboard",
+        "price": 175000,
+        "image": "Images/MotherBoard 6.jpg"
+    },
+
+
+    {
+        "id": 19,
+        "name": "Corsair Dominator Platinum 32GB DDR4 Memory",
+        "price": 39500,
+        "image": "Images/RAM 1.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Corsair Dominator Titanium 32GB DDR5 Memory",
+        "price": 65000,
+        "image": "Images/RAM 2.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Corsair Vengeance 16GB DDR4 Memory",
+        "price": 11000,
+        "image": "Images/RAM 3.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Corsair Vengeance RGB 64GB DDR5 Memory",
+        "price": 11000,
+        "image": "Images/RAM 4.jpg"
+    },
+
+
+
+    {
+        "id": 23,
+        "name": "Kingston NV3 2TB M.2 SSD",
+        "price": 36000,
+        "image": "Images/storage device 1.gif"
+    },
+    {
+        "id": 24,
+        "name": "MSI SPATIUM SATA 2.5 960GB",
+        "price": 19000,
+        "image": "Images/storage device 2.jpg"
+    },
+    {
+        "id": 25,
+        "name": "MSI Spatium M480 PRO 2TB SSD",
+        "price": 45000,
+        "image": "Images/storage device 3.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Seagate BarraCuda 1TB Desktop Internal Hard Drive",
+        "price": 20000,
+        "image": "Images/storage device 4.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Seagate BarraCuda 2TB Desktop Internal Hard Drive",
+        "price": 23000,
+        "image": "Images/storage device 5.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Seagate BarraCuda 4TB Desktop Internal Hard Drive",
+        "price": 36000,
+        "image": "Images/storage device 6.jpg"
+    }
+
+]

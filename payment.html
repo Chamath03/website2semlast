@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePulse</title>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+
+    <!-- Navbar Section -->
+<header class="header">
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+               <img src="Images/LOGO-FINALE.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a>Console Zone</a>
+                    <ul class="Submenu">
+                        <li><a href="console.html">Consoles</a></li>
+                        <li><a href="gamingpheripherals.html">Gaming Peripherals</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="upcominggames.html">Upcoming Games</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="carticon">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <span class="cartcount">0</span>
+                </div>
+           
+            <button type="button" onclick="location.href='sign in.html'">Sign In</button>
+          
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="pay-container">
+      <h1 class="pay-h1">Review Your Order</h1>
+  
+      <div class="pay-order-summary">
+        <h2 class="pay-h2">Order Summary</h2>
+        <table class="pay-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="order-items">
+            <!-- Dynamically inserted rows here -->
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"><strong>Total</strong></td>
+              <td><strong></strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+  
+      <form id="order-form">
+        <div class="section">
+          <h2>Personal Information</h2>
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number">
+        </div>
+  
+        <div class="section">
+          <h2>Delivery Details</h2>
+          <input type="text" name="address" placeholder="Delivery Address" required>
+          <input type="text" name="city" placeholder="City" required>
+          <input type="text" name="zip" placeholder="ZIP / Postal Code" required>
+          <select name="country" required>
+            <option value="">Select Country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="sl">Sri Lanka</option>
+            <option value="ind">India</option>
+            <option value="pak">Pakistan</option>
+            <option value="aus">Australia</option>
+            <option value="fra">France</option>
+            <!-- Add more as needed -->
+          </select>
+          <label for="deliveryDate"><strong>Preferred Delivery Date:</strong></label>
+          <input type="date" name="deliveryDate" id="deliveryDate" required>
+        </div>
+  
+        <div class="section">
+          <h2>Payment Information</h2>
+          <input type="text" name="cardName" placeholder="Name on Card" required>
+          <input type="text" name="cardNumber" placeholder="Card Number" required>
+          <input type="text" name="expiry" placeholder="MM/YY" required>
+          <input type="text" name="cvv" placeholder="CVV" required>
+        </div>
+  
+        <button type="submit" class="submit-btn">Place Order</button>
+      </form>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <h2 class="footerlogo">GamePulse</h2>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Contact Info</h3>
+                <p>756 R. A. De Mel Mawatha, Colombo</p>
+                <p>+94 123 45 67 89</p>
+                <p>GamePulse@gmail.com</p>
+            </div>
+            <div class="footer-item">
+                <h3>Easy Search</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="console.html">Consoles</a></p>
+                <p><a href="gamingpheripherals.html">Gaming Peripherals</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+            <div class="footer-item">
+            
+            <h3>Follow Us</h3>
+                <a href="https://facebook.com" class="facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" class="instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" class="twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://youtube.com" class="youtube" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>   
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>© 2025 GamePulse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+      <script src="payment.js"></script>
+</body>
+  </html>
